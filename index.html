@@ -534,11 +534,11 @@
         <button class="calc-btn clear" onclick="calcAction('C')">C</button>
         <button class="calc-btn del" onclick="calcAction('DEL')"></button>
         <button class="calc-btn op" onclick="calcAction('%')">%</button>
-        <button class="calc-btn op" onclick="calcAction('/')">÷</button>
+        <button class="calc-btn op" onclick="calcAction('/')">Ã·</button>
         <button class="calc-btn" onclick="calcAction('7')">7</button>
         <button class="calc-btn" onclick="calcAction('8')">8</button>
         <button class="calc-btn op" onclick="calcAction('9')">9</button>
-        <button class="calc-btn op" onclick="calcAction('*')">×</button>
+        <button class="calc-btn op" onclick="calcAction('*')">Ã—</button>
         <button class="calc-btn" onclick="calcAction('4')">4</button>
         <button class="calc-btn" onclick="calcAction('5')">5</button>
         <button class="calc-btn" onclick="calcAction('6')">6</button>
@@ -731,7 +731,7 @@
     </div>
     <div class="light-box-text-fix highlight-text" style="font-size:12px; color:#B45309; font-weight:700; background:#FFFBEB; padding:6px 10px; border-radius:8px; display:inline-block; margin-bottom:12px;" id="modalShopCategory"></div>
     <div class="light-box-text-fix" style="background:#F8F9FA; border:1px solid #E5E7EB; border-radius:12px; padding:14px; margin-bottom:16px;" id="modalShopDescContainer"></div>
-    <div style="font-size:11px; color:#6B7280; margin-bottom:16px;" id="modalShopDistance"> : 0.5   •   </div>
+    <div style="font-size:11px; color:#6B7280; margin-bottom:16px;" id="modalShopDistance"> : 0.5   Â•   </div>
     <button class="btn-premium-ok" style="width:100%; background:#111827; color:#fff; border:none; padding:13px; border-radius:12px; font-weight:800; font-size:13px; cursor:pointer;" onclick="closeShopProfileModal()">   (OK)</button>
   </div>
 </div>
@@ -772,7 +772,7 @@
     <div style="font-size:16px; font-weight:800; color:#111827;" id="scannerModalTitle">  </div>
     <div style="font-size:12px; color:#6B7280; margin-top:4px;">   4-    </div>
     <div style="margin-top: 14px;">
-      <input type="password" id="merchantSecretPinInput" class="pin-input-box" maxlength="4" placeholder="••••">
+      <input type="password" id="merchantSecretPinInput" class="pin-input-box" maxlength="4" placeholder="Â•Â•Â•Â•">
     </div>
     <div style="display:flex; gap:10px; margin-top:16px;">
       <button style="flex:1; background:#F3F4F6; border:none; padding:11px; border-radius:10px; font-weight:700; cursor:pointer; color:#111;" class="modal-close-btn" style="font-size:14px;" onclick="closePinModal()"> </button>
@@ -1340,7 +1340,7 @@
           <div style="font-size:24px; background:#FFFBEB; padding:10px; border-radius:12px; border:1px solid #FDE68A;"></div>
           <div style="flex:1;">
             <div style="font-size:14px; font-weight:800; color:#111827;">${store.store_name}    !</div>
-            <div style="font-size:12px; color:#4B5563; margin-top:2px;"> ${store.address} • : ${safeOffer}</div>
+            <div style="font-size:12px; color:#4B5563; margin-top:2px;"> ${store.address} Â• : ${safeOffer}</div>
             <div style="font-size:11px; color:#059669; font-weight:700; margin-top:6px;">         !</div>
           </div>
         </div>
@@ -1397,7 +1397,7 @@
       if (homeLat !== null && homeLon !== null && sLat && sLon && !isNaN(parseFloat(sLat))) {
         let distMeters = calculateDistanceMeters(homeLat, homeLon, parseFloat(sLat), parseFloat(sLon));
         let distKm = (distMeters / 1000).toFixed(1);
-        displayDistanceText = ` ${distKm}   • ${address}`;
+        displayDistanceText = ` ${distKm}   Â• ${address}`;
       }
 
       let cardClassNames = "merchant-card store-item" + (isHighDiscountStore ? " high-discount-card" : "");
